@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+</head>
+<body>
+
+    <h2>My Portfolio</h2>
+
+    <button onclick="showDetails()">Show My Details</button>
+
+    <p id="details"></p>
+
+    <script>
+        let name = "Kishan";
+        const age = 18;
+        const course = "BCA";
+
+        alert("Welcome to My Portfolio!");
+
+        function showDetails() {
+            document.getElementById("details").innerHTML =
+                "Name: " + name + "<br>" +
+                "Age: " + age + "<br>" +
+                "Course: " + course;
+        }
+    </script>
+
+</body>
+</html>
