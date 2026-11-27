@@ -1,0 +1,69 @@
+/* element selector */
+body {
+    background-color: #f4f6f7;
+}
+
+/* class selector */
+.contact-btn {
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #1b5e20;
+    color: #f4f6f7;
+    border: none;
+    padding: 10px 20px;
+
+/* css positioning */
+    position: relative;
+    display: block;
+    margin: 20px auto;
+}
+
+/* id selector */
+#name {
+    font-size: 50px;
+    line-height:0;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+#info{
+    font-size: 18px;
+    line-height: 0;
+    font-family: sans-serif;
+    font-weight: 200;
+}
+
+/* attribute selector */
+ul[class="list"]{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    gap: 20px;
+}
+
+a[id="item"]{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    font-family: verdana;
+}
+
+/* psuedo-class selector for list hover */
+a[id="item"]:hover{
+    color: gray;
+}
+
+/* psuedo-class selector for contact button hover */
+button[class="contact-btn"]:hover{
+    background-color: blue;
+}
+
+/* Flex Layout according question 3 */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #1b5e20;
+}
