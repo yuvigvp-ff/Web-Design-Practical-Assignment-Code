@@ -1,48 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Student Result</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical Question 2</title>
 </head>
 <body>
+    <h1>HTML Multimedia Elements:</h1>
+    <hr><br>
+    <!-- link for open google.com -->
+    <h3>Click Here To Open Google -  <strong><a href="https://www.google.com/" target="_blank">Google</a></h3></strong>
+    <hr><br>
 
-    <h2>Student Result</h2>
+    <!-- image tag with all attributes -->
+    <h3>Image With Width, Height And ALT Attribute:</h3>
+    <img src="https://preview.redd.it/describe-the-ovals-victory-in-one-word-ict-fans-v0-ke0zv18eozgf1.jpeg?width=640&crop=smart&auto=webp&s=ba7e3fbfabb70ad86b0705c64f0747c879270c13" alt="image" width="400" height="300">
+    <hr><br>
 
-    <label>Subject 1 Marks:</label>
-    <input type="number" id="mark1"><br><br>
+    <!-- audio tag with all controls -->
+    <h3>Audio Player With Controls:</h3>
+    <audio src="song.mp3" controls></audio>
+    <hr><br>
 
-    <label>Subject 2 Marks:</label>
-    <input type="number" id="mark2"><br><br>
+    <!-- video tag with all controls -->
+     <h3>Video Player With All Controls:</h3>
+     <video src="video.mp4" controls width="400" height="300"></video>
+     <hr><br>
 
-    <label>Subject 3 Marks:</label>
-    <input type="number" id="mark3"><br><br>
-
-    <button onclick="calculateResult()">Calculate Result</button>
-
-    <p id="result"></p>
-
-    <script>
-        function calculateResult() {
-            let mark1 = Number(document.getElementById("mark1").value);
-            let mark2 = Number(document.getElementById("mark2").value);
-            let mark3 = Number(document.getElementById("mark3").value);
-
-            let total = mark1 + mark2 + mark3;
-            let percentage = (total / 300) * 100;
-
-            let status;
-
-            if (mark1 >= 40 && mark2 >= 40 && mark3 >= 40) {
-                status = "Pass";
-            } else {
-                status = "Fail";
-            }
-
-            document.getElementById("result").innerHTML =
-                "Total Marks: " + total + "<br>" +
-                "Percentage: " + percentage + "%<br>" +
-                "Result: " + status;
-        }
-    </script>
+    <!-- iframe tag with google map frame -->
+     <h3>Google Maps IFrame:</h3>
+     <iframe src="https://www.google.com/maps/@23.0593056,72.6307039,3087m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI2MDgxNi4wIKXMDSoASAFQAw%3D%3D" frameborder="2" width="400" height="300"></iframe>
+     <hr><br>
 
 </body>
 </html>
