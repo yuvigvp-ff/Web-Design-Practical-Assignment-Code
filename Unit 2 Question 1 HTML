@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Webpage Practical</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        p{
+            font-size: 18px;
+            font-family: Arial, sans-serif;
+            color:#00695c;
+        }
+    </style>
+</head>
+<body>
+    <!-- name and contact information using inline CSS -->
+    <h1 id="name" style="color: #1b5e20; text-align: center;">YUVRAJ RAJPUT</h1><br>
+    <h4 id="info" style="color: #424242; text-align:center;">Email- yuvi060027@gmail.com<br>Phone-9773019878</h4>
+
+    <!-- navbar using nav tag -->
+    <nav class="navbar">
+        <ul class="list">
+            <li><a href="#" id="item">Home</a></li>
+            <li><a href="#" id="item">Blogs</a></li>
+            <li><a href="#" id="item">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- about me paragraph using internal CSS -->
+      
+  <p>Hello! My name is Yuvraj Rajput. I am 18 years old and currently pursuing BCA. I am interested in technology, programming, gaming, and esports. I enjoy competitive gaming, learning new skills, exploring new ideas, and improving myself every day. </p>
+  
+
+    <!--Contact me button using class selector and external CSS-->
+    <button class="contact-btn">Contact Me</button>
+</body>
+</html>
