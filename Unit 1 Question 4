@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical Question 4</title>
+</head>
+<body>
+    <h1>Contact Form For Users:</h1>
+    <hr><br>
+    <h3>For Contact Us Fill This Form:</h3>
+
+    <!-- contact us form with all describe attributes -->
+     <form action="#">
+
+        <label>Full Name:</label><br>
+        <input type="text" placeholder="Enter Your Name" pattern="[A-Za-z]+" required><br><br>
+
+        <label>Enter Your Email ID:</label><br>
+        <input type="text" placeholder="example@gmail.com" required><br><br>
+
+        <label>Enter Your Phone Number:</label><br>
+        <input type="tel" placeholder="Enter 10 Digit Number" pattern="[0-9]{10}" required><br><br>
+
+        <label>Enter Your Subject:</label><br>
+        <input type="text" placeholder="Enter Your Subject" required><br><br>
+
+        <label>Message:</label><br>
+        <textarea name="message" id="meassage" rows="5" cols="30" placeholder="Enter Your Requirements" required></textarea><br><br>
+
+        <input type="submit"> <input type="reset">
+     </form>
+     <hr>
+
+     <!-- improtrance od HTML5 Form validation -->
+      <h3>Importance Of HTML5 Form Validation:</h3>
+      <p>HTML5 form validation helps ensure that users submit date in the correct format before sending it to the server. It improves user experience by catching errors instantly on the client side without needing full page reloads. Additionally, it helps reduce unnecessary server load and improves overall data security.</p>
+
+
+</body>
+</html>
