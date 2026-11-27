@@ -1,30 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical Question 3</title>
 </head>
 <body>
+    <h1>Feedback Form For Users:</h1>
+    <hr><br>
+    
+    <!-- feedback form with all input types -->
+    <h3>Fill This Feedback Form:</h3>
+    <form action="#">
+        <label>Full Name:</label><br>
+        <input type="text" placeholder="Enter Your Name"><br><br>
 
-    <h2>My Portfolio</h2>
+        <label>Email Address:</label><br>
+        <input type="email" placeholder="Enter Your Email"><br><br>
 
-    <button onclick="showDetails()">Show My Details</button>
+        <label>Age:</label><br>
+        <input type="number" placeholder="Enter Age"><br><br>
 
-    <p id="details"></p>
+        <label>Date Of Visit:</label><br>
+        <input type="date"><br><br>
 
-    <script>
-        let name = "Kishan";
-        const age = 18;
-        const course = "BCA";
+        <label>Mobile Phone:</label><br>
+        <input type="tel" placeholder="Enter Your Mobile Number"><br><br>
 
-        alert("Welcome to My Portfolio!");
+        <label>Website Name:</label><br>
+        <input type="url" placeholder="Enter Website Name"><br><br>
 
-        function showDetails() {
-            document.getElementById("details").innerHTML =
-                "Name: " + name + "<br>" +
-                "Age: " + age + "<br>" +
-                "Course: " + course;
-        }
-    </script>
+        <label>Your Rating:</label><br>
+        <input type="range"><br><br>
 
+        <label>Your Favourite Color:</label><br>
+        <input type="color"><br><br>
+
+        <label>Upload Screenshot Here:</label><br>
+        <input type="file"><br><br>
+
+        <!-- submit and reset button -->
+        <input type="submit" value="Register"> <input type="reset" value="Clear This Form">
+    </form>
 </body>
 </html>
